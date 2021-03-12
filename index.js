@@ -6,7 +6,7 @@ const { Arch } = require("builder-util");
 const { createReadStream, stat } = require("fs-extra-p");
 const { basename, join } = require("path");
 
-console.prototype.debug = function(...args) {
+console.debug = function(...args) {
     if(process.env.DEBUG) console.log(`\x1b[33m[DEBUG] \x1b[0m`, ...args);
 }
 
